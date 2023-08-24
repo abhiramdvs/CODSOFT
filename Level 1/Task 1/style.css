@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+header {
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 63, 0, 1) 0%, rgba(103, 237, 237, 1) 0%, rgba(27, 88, 237, 1) 100%, rgba(101, 233, 233, 1) 100%);
+    width: 100%;
+    padding: 0.8rem;
+}
+
+header i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0rem 0.6rem;
+    color: rgb(0, 0, 0);
+}
+
+.mov {
+    overflow: hidden;
+    display: flex;
+    transform: translate(80%, 0%);
+    color: white;
+}
+
+.mov i {
+    font-size: 1rem;
+    transform: translate(0rem, 0.3rem);
+    color: white;
+}
+
+.mov p {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.mov .reqbtn {
+    padding: 0rem 0.6rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.mov .reqbtn:hover {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 63, 0, 1) 0%, rgba(151, 237, 103, 1) 0%, rgba(27, 88, 237, 1) 100%, rgba(101, 233, 233, 1) 100%);
+}
+
+.navbar {
+    width: 100vw;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgb(56, 115, 251) 0%, rgba(69, 252, 222, 1) 100%);
+    padding-bottom: 0.5rem;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem 2rem 0rem 0rem;
+    cursor: pointer;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.navbar img {
+    width: 40px;
+    margin: 0.5rem 0.2rem 0rem 1rem;
+}
+
+.navbar p {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1.1rem 3rem 0rem 0rem;
+    cursor: pointer;
+}
+
+.home {
+    scroll-snap-align: start;
+    background: rgba(0, 0, 0, 0.8) url("cs.webp");
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 100vh;
+}
+
+.home h1 {
+    margin-top: 1.5rem;
+    color: white;
+    letter-spacing: 0.1rem;
+    padding-left: 0.3rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.home h2 {
+    margin-top: 3rem;
+    margin-left: 7rem;
+    color: white;
+    letter-spacing: 0.1rem;
+    border-style: solid;
+    border-width: 4px;
+    border-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 63, 0, 1) 0%, rgba(103, 237, 237, 1) 0%, rgba(27, 88, 237, 1) 100%, rgba(101, 233, 233, 1) 100%) 1;
+    padding-left: 0.3rem;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.home button {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 63, 0, 1) 0%, rgba(103, 237, 237, 1) 0%, rgba(27, 88, 237, 1) 100%, rgba(101, 233, 233, 1) 100%);
+}
+
+.home button:hover {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 63, 0, 1) 0%, rgba(151, 237, 103, 1) 0%, rgba(27, 88, 237, 1) 100%, rgba(101, 233, 233, 1) 100%);
+}
+
+.home #rbtn {
+    margin-left: 31rem;
+}
+
+.home #cbtn {
+    margin-left: 4rem;
+}
+
+.about {
+    scroll-snap-align: start;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.8) url("about.webp");
+    background-blend-mode: darken;
+    color: white;
+    height: 100vh;
+}
+
+.about h3 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+.about p {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    padding: 2rem;
+    text-align: center;
+    width: 40vw;
+}
+
+.about img {
+    width: 300px;
+    transform: translate(290%, -90%);
+}
+
+.about button {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    text-align: center;
+    transform: translate(-40%, -500%);
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 63, 0, 1) 0%, rgba(103, 237, 237, 1) 0%, rgba(27, 88, 237, 1) 100%, rgba(101, 233, 233, 1) 100%);
+}
+
+.about button:hover {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 63, 0, 1) 0%, rgba(151, 237, 103, 1) 0%, rgba(27, 88, 237, 1) 100%, rgba(101, 233, 233, 1) 100%);
+}
+
+/* EXPERTISE */
+.expertise {
+    scroll-snap-align: start;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.8) url("expertise.jpg");
+    background-blend-mode: darken;
+    color: white;
+    height: 100vh;
+}
+
+.expertise h3 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+.expertise p {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    padding: 2rem;
+    text-align: center;
+    width: 40vw;
+}
+
+.expertise img {
+    width: 500px;
+    transform: translate(145%, -100%);
+}
+
+.expertise button {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    text-align: center;
+    transform: translate(-200%, -580%);
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 63, 0, 1) 0%, rgba(103, 237, 237, 1) 0%, rgba(27, 88, 237, 1) 100%, rgba(101, 233, 233, 1) 100%);
+}
+
+.expertise button:hover {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 63, 0, 1) 0%, rgba(151, 237, 103, 1) 0%, rgba(27, 88, 237, 1) 100%, rgba(101, 233, 233, 1) 100%);
+}
+
+/* SERVICES */
+.services {
+    scroll-snap-align: start;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.8) url("services.webp");
+    background-blend-mode: darken;
+    color: white;
+    height: 100vh;
+}
+
+.services h3 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+.services #serv {
+    font-size: 1.2rem;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+}
+
+.services h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    margin-bottom: 0.3rem;
+    margin-left: 3rem;
+}
+
+.services .servpara {
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.05rem;
+}
+
+footer p {
+    margin-top: auto;
+    text-align: center;
+}
+
+/* ANIMATION */
+
+.home h1 {
+    border-right: 2px solid rgb(255, 255, 255);
+    white-space: nowrap;
+    margin: 0 auto;
+    margin-top: 2rem;
+    animation: typing 3s steps(3000) infinite;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+        text-align: center;
+    }
+
+    60%,
+    100% {
+        width: 32rem;
+        text-align: center;
+    }
+}
+
+.contact{
+    scroll-snap-align: start;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.8) url("cimg.jpg");
+    background-blend-mode: darken;
+    color: white;
+    height: 100vh;
+    background-size: cover;
+}
+
+.contact h3{
+    margin-top: 1rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+}
+
+.contact #cpara{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.contact .cont{
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 63, 0, 1) 0%, rgba(103, 237, 237, 1) 0%, rgba(27, 88, 237, 1) 100%, rgba(101, 233, 233, 1) 100%);
+    width: 34vw;
+    border-radius: 25px;
+}
+
+.contact input, .contact textarea{
+    font-size: 1rem;
+    padding: 0.5rem;
+    padding-left: 0.1;
+    margin: 0.5rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.contact input{
+    padding-right: 212px;
+}
+
+.contact textarea{
+    resize: none;
+    border-width: 3px;
+}
+
+.contact button{
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 0.3rem 0.8rem 0.3rem 0.8rem;
+    margin-left: 39%;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(255, 128, 0) 0%, rgb(237, 210, 103) 0%, rgb(118, 237, 27) 100%, rgba(101, 233, 233, 1) 100%);
+    border-radius: 10px;
+}
+
+.contact button:hover{
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 63, 0, 1) 0%, rgba(151, 237, 103, 1) 0%, rgba(27, 88, 237, 1) 100%, rgba(101, 233, 233, 1) 100%);
+}
