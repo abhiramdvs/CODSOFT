@@ -1,1 +1,157 @@
+<!--
+    CodSoft Internship - Web Development
+    Batch - AUGUST BATCH - 05
+    Name - ABHIRAM D V S
+    Date - 30/08/2023
+    Level 1 (Task 2) - Personal Portfolio using HTML and CSS
+-->
+<!doctype html>
+<html lang="en">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Personal Portfolio</title>
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/542cb8b844.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="logo.ico" alt="logo" width="45" height="45">
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certificates</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="home section" id="home">
+            <div class="profimg">
+                <img src="abhi.jpg" alt="profilepic">
+            </div>
+            <div class="homeContent" data-aos="zoom-out-down">
+                <h4>WEB DEVELOPER</h4>
+                <h1>ABHIRAM D V S</h1>
+                <p>A passionate web developer crafting user-centric experiences. Enthusiastic about code, design, and
+                    creating digital solutions that make a difference.</p>
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/abhiramdvs" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/abhiramdvs" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="AbhiResume.pdf" target="_blank"><button class="btn">Download Resume</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills section" id="skills" data-aos="fade-right">
+            <h1>SKILLS</h1>
+            <div class="skillimg">
+                <img src="clang.png" alt="" class="img" id="img1">
+                <h3>C Language</h3>
+                <img src="html.png" alt="" class="img" id="img4">
+                <h3>HTML</h3>
+                <img src="plang.png" alt="" class="img" id="img2">
+                <h3>Python</h3>
+                <img src="css.png" alt="" class="img" id="img5">
+                <h3>CSS</h3>
+                <img src="jlang.png" alt="" class="img" id="img3">
+                <h3>Java</h3>
+                <img src="jslang.png" alt="" class="img" id="img6">
+                <h3>JavaScript</h3>
+                <img src="security.png" alt="" class="img" id="img7">
+                <h3 id="cybertext">Cyber Security</h3>
+            </div>
+        </div>
+
+        <div class="certifications section" id="certifications">
+            <h1>CERTIFICATIONS</h1>
+            <div class="content" data-aos="fade-left">
+                <h4>Cyber Warrior, Hacking Flix Academy</h4>
+                <p>August 2020 – December 2020</p>
+                <img src="security.png" alt="" class="img" id="img1">
+                <h4 class="c2">C Language, Spoken Tutorial Project, IIT Bombay</h4>
+                <p class="c2">February 2023 – April 2023</p>
+                <img src="clang.png" alt="" class="img" id="img2">
+                <h4 class="c3">Python Essentials, Cisco Networking Academy & OpenEDG Python Institute</h4>
+                <p class="c3">July 2023 – August 2023</p>
+                <img src="plang.png" alt="" class="img" id="img3">
+            </div>
+        </div>
+
+        <div class="projects section" id="projects">
+            <h1>PROJECTS</h1>
+            <div class="content">
+                <div class="cards" id="card1" data-aos="flip-left" data-aos-delay="200">
+                    <h3>Anti-Sleeping Device for Drivers</h3>
+                    <p>Developed a cutting-edge solution to enhance road safety by creating an Anti-Sleeping Device for
+                        Drivers during my first semester of B.Tech. This innovative system involved designing smart
+                        eyewear that utilized sensors to detect driver drowsiness.</p>
+                </div>
+                <div class="cards" id="card2" data-aos="flip-left" data-aos-delay="400">
+                    <h3>To-Do List in Python</h3>
+                    <p>The To-Do List App is a simple command-line-based application that allows users to manage their
+                        tasks effectively. Users can add new tasks, view existing tasks, and mark tasks as completed
+                        using this app. It uses a file named "taskList.txt" to store the tasks. Each task is stored as a
+                        JSON-formatted dictionary on a new line in the file and link to the project is
+                        <a href="https://github.com/abhiramdvs/to-do-list-app" target="_blank">here</a>.
+                    </p>
+                </div>
+                <div class="cards" id="card3" data-aos="flip-left" data-aos-delay="600">
+                    <h3>Portfolio Website</h3>
+                    <p>I designed and developed a personal portfolio website to showcase my skills and accomplishments.
+                        Using HTML, CSS, Bootstrap, and JavaScript. To enhance user engagement, I integrated smooth
+                        scroll animations and interactive navigation links. The website is fully responsive, ensuring a
+                        seamless experience across various devices. Watch my live website <a
+                            href="https://www.abhiramdvs.lovestoblog.com/" target="_blank">here</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact section" id="contact">
+            <h1>LET'S GET IN TOUCH!</h1>
+            <div class="content" data-aos="fade-up" data-aos-delay="200">
+                <div class="cards">
+                    <h2><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;Email me @<a
+                            href="mailto:dvsabhiram@gmail.com">dvsabhiram@gmail.com</a></h2>
+                </div>
+            </div>
+            <footer>&copy; ABHIRAM D V S. All rights reserved.</footer>
+        </div>
+        <script>
+            AOS.init();
+
+            // You can also pass an optional settings object
+            // below listed default settings
+            AOS.init({
+                // Global settings:
+                disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+                startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+                initClassName: 'aos-init', // class applied after initialization
+                animatedClassName: 'aos-animate', // class applied on animation
+                useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+                disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+                debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+                throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+                // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                offset: 120, // offset (in px) from the original trigger point
+                delay: 0, // values from 0 to 3000, with step 50ms
+                duration: 800, // values from 0 to 3000, with step 50ms
+                easing: 'ease', // default easing for AOS animations
+                once: false, // whether animation should happen only once - while scrolling down
+                mirror: false, // whether elements should animate out while scrolling past them
+                anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+            });
+        </script>
+</body>
+
+</html>
